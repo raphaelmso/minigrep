@@ -10,7 +10,6 @@ fn main() {
         println!("Problem parsing arguments: {err}");
         process::exit(1);
     });
-    config.print_arg();
 
     if let Err(e) = run(config) {
         println!("Application Error: {e}");
