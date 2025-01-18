@@ -8,11 +8,6 @@ fn main() {
         process::exit(1)
     });
 
-    println!(
-        "Searching for {}\nInside {}",
-        config.query, config.file_path
-    );
-
     if let Err(e) = minigrep::run(config) {
         println!("minigrep: {e}");
     }
